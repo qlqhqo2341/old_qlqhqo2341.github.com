@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>농협장학관 오늘의 메뉴이동</title>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+            <script>
+            var today = new Date;
+            var yyyy=today.getFullYear(), mm=today.getMonth()+1, dd=today.getDay()+1;
+            yyyy=String(yyyy), mm=String( (mm<10 ? "0" : "") + mm ), dd=String((dd<10 ? "0" : "")+dd);
+            menuDate = yyyy+mm+dd;
+            console.log(menuDate);
+            var links = "http://m.nhschool.co.kr/menu/menuReservation.do?TCT_YMD=" + menuDate;
+            window.location.replace(links);
+            </script>
+    </head>
+    <body>
+        <h1>ㅁㄴㅇㄻㄴㅇㄹ</h1>
+    </body>
+</html>

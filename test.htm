@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tester!</title>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script>
+            var today = new Date;
+            var yyyy=today.getFullYear(), mm=today.getMonth()+1, dd=today.getDay()+1;
+            yyyy=String(yyyy), mm=String( (mm<10 ? "0" : "") + mm ), dd=String((dd<10 ? "0" : "")+dd);
+            console.log(yyyy+mm+dd);
+        </script>
+    </head>
+    <body>
+        <h1>This is test sciprt!</h1>
+    </body>
+</html>
