@@ -5,7 +5,7 @@
         <script src="http://code.jquery.com/jquery.min.js"></script>
             <script>
             var today = new Date;
-            var yyyy=today.getFullYear(), mm=today.getMonth()+1, dd=today.getDay()+1;
+            var yyyy=today.getFullYear(), mm=today.getMonth()+1, dd=today.getDate();
             yyyy=String(yyyy), mm=String( (mm<10 ? "0" : "") + mm ), dd=String((dd<10 ? "0" : "")+dd);
             menuDate = yyyy+mm+dd;
             console.log(menuDate);
